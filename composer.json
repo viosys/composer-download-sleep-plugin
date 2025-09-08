@@ -1,0 +1,22 @@
+{
+  "name": "viosys/composer-download-sleep-plugin",
+  "description": "Composer plugin to sleep for a given amount of seconds before downloading a file",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "require": {
+    "php": "^8.3",
+    "composer-plugin-api": "^2.0"
+  },
+  "require-dev": {
+    "composer/composer": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vio\\ComposerDownloadSleep\\": "src"
+    }
+  },
+  "extra": {
+    "class": "Vio\\ComposerDownloadSleep\\Plugin",
+    "plugin-modifies-downloads": true
+  }
+}
