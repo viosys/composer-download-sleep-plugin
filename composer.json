@@ -4,16 +4,21 @@
   "type": "composer-plugin",
   "license": "MIT",
   "require": {
-    "php": "^8.3",
+    "php": "^8.2",
     "composer-plugin-api": "^2.0"
   },
   "require-dev": {
-    "composer/composer": "^2.0"
+    "composer/composer": "^2.0",
+    "phpstan/phpstan": "^1.11"
   },
   "autoload": {
     "psr-4": {
       "Vio\\ComposerDownloadSleep\\": "src"
     }
+  },
+  "scripts": {
+    "phpstan": "phpstan analyse --no-progress",
+    "phpstan:strict": "phpstan analyse --level=max --no-progress"
   },
   "extra": {
     "class": "Vio\\ComposerDownloadSleep\\Plugin",

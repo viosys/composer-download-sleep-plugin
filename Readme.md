@@ -25,3 +25,12 @@ Purpose is to avoid hitting the rate limit of the provider.
     }
 }
 ```
+
+## Development
+
+- Static analysis: install dev dependencies and run PHPStan
+  - Install: `composer install`
+  - Run: `composer phpstan`
+  - Strict: `composer phpstan:strict`
+
+PHPStan is configured via phpstan.neon.dist at level 8 analyzing the src directory.
