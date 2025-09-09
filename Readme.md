@@ -3,6 +3,14 @@
 This plugin will sleep for a given amount of seconds before downloading a file.
 Purpose is to avoid hitting the rate limit of the provider.
 
+## Installation
+
+- Requirements: PHP ^8.2 and Composer 2.x
+- Install the plugin in your project:
+  - Globally: `composer global require viosys/composer-download-sleep-plugin`
+  - Per project: `composer require viosys/composer-download-sleep-plugin --dev`
+- Composer will automatically activate the plugin (type: composer-plugin).
+
 ## Configuration
 
 | Name        | Type    | Default | Description                                                                                                                                         |
